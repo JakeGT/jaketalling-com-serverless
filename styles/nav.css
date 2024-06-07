@@ -1,0 +1,143 @@
+header {
+    z-index: 3;
+    position: relative;
+    top: 0%;
+    position: sticky;
+}
+
+#name {
+    float: left;
+    padding: 14px 16px;
+    display: none;
+    color: white;
+    font-weight: 700;
+}
+
+.nav-container a {
+    text-decoration: none;
+}
+
+.nav-container {
+    background-color: #181818;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    width: 95%;
+    overflow: hidden;
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    transition-duration: 0.3s;
+    padding: 14px 16px;
+    font-size: 12;
+    cursor: pointer;
+}
+
+nav a.active {
+    background-color: #2b2b2b;
+    transition-duration: 0.3s;
+}
+
+nav a:hover {
+    background-color: #424242;
+    transition-duration: 0.3s;
+}
+
+#home-link {
+    float: left;
+}
+
+#projects-link {
+    float: left;
+}
+
+#contact-link {
+    float: left;
+}
+
+#apps-link {
+    float: left;
+}
+
+#about-link {
+    float: right;
+}
+
+.nav-toggle {
+    float: right;
+    padding: 14px 16px;
+    display: none;
+    color: white;
+    cursor: pointer;
+}
+
+.open {
+    height: calc(100vh - 30px);
+}
+
+.hidden {
+    display: none;
+}
+
+@media all and (max-width: 800px) {
+    body {
+        margin: 0;
+    }
+    header {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+    .nav-container {
+        margin: 0;
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 0;
+        transition: 250ms height ease-in-out;
+        margin-top: 47px;
+    }
+    nav a {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .nav-toggle {
+        display: block;
+    }
+
+    #name {
+        display: block;
+    }
+
+    #main {
+        height: calc(var(--vh, 1vh) * 100 - 50px);
+    }
+
+    #section-2 {
+        width: 100vw;
+        padding-top: 50px;
+    }
+    #section-2-content {
+        width: 95vw;
+        font-size: 2.4vmin;
+    }
+
+    #me{
+        width: 40vmin;
+        height: 40vmin;
+        padding: 1.5vmin;
+    }
+
+    #section-2-content p {
+        padding: 1.5vmin;
+    }
+}

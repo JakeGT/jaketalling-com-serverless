@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Jake Talling</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+<header>
+    <div class="nav-container">
+        <div id="name">JAKE TALLING</div>
+        <div class="nav-toggle" id="navToggle">
+            <svg class="nav-icon" id="hamburger" viewBox = "0 0 100 80" width = 20 height = 20>
+                <rect width="100" height = "20" fill="white"></rect>
+                <rect y="30" width="100" height="20" fill="white"></rect>
+                <rect y="60" width="100" height="20" fill="white"></rect>
+            </svg>
+            <svg class="nav-icon hidden" viewBox = "0 0 100 80" width = "20" height = "20">
+                <line x1=10 y1=2 x2=90 y2=80 stroke-width="25" stroke="white"/>
+                <line x1=90 y1=2 x2=10 y2=80 stroke-width="25" stroke="white"/>
+            </svg>
+        </div>
+        <nav>
+            <a href="." id="home-link" class="nav-link active">HOME</a>
+            <a href="/projects" id="projects-link" class="nav-link">PROJECTS</a>
+            <a href="/contact" id="contact-link" class="nav-link">CONTACT</a>
+            <a href="https://apps.jaketalling.com" id="apps-link" class="nav-link">APPS</a>
+            <a href="/about" id="about-link" class="nav-link">ABOUT ME</a>
+        </nav>
+    </div>
+</header>
+
+<div id="main">
+    <div id="bg"></div>
+    <p id="bg-credit">Photo by <a href="https://unsplash.com/@nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">NASA</a></p>
+    <div id="section-1" class="section">
+        <h1>JAKE<br>TALLING</h1>
+        <br>
+        <img src="images/index/down-arrow.png" style="width:50px; height: 50px" class="arrow bounce" onclick="nextSection()">
+    </div>
+    <div id="section-2" class="section">
+        <h2>Who Am I?</h2><br>
+        <div id="section-2-content">
+            <img src="images/index/me.jpg" id="me">
+            <div>
+                <p>A longtime enthusiast of technology with a background in computer science. With over 6 years in programming experience
+                    and proficiencies in Python, Java, JS, PHP, I have begun my journey as a software developer at the University of Exeter. Here, I am completing
+                    an integrated master’s degree over 4 years with a particular module focus in AI.
+                </p><br>
+                <a href="/about">READ MORE</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="scripts/navbar.js"></script>
+<script src="scripts/index.js"></script>
+</body>
+</html>
